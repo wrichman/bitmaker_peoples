@@ -1,0 +1,25 @@
+<h2>Add a Maker</h2>
+
+<form action="/makers/<%= @maker.id %>" method="post">
+  <p>
+    <label>First Name:</label>
+    <input type="text" name="maker[first_name]" value="<%= @maker.first_name %>"></input>
+  </p>
+
+  <p>
+    <label>Last Name:</label>
+    <input type="text" name="maker[last_name]" value="<%= @maker.last_name%>"></input>
+  </p>
+
+  <p>
+    <label>Email:</label>
+    <input type="text" name="maker[email]" value="<%= @maker.email%>"></input>
+  </p>
+
+  <p>
+    <label>Image URL:</label>
+    <input type="text" name="maker[image_url]" value="<%= @maker.image_url %>"></input>
+  </p>
+
+  <input type="submit"/>
+</form>
